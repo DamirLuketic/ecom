@@ -1,0 +1,12 @@
+{
+	"autoload": {
+		"psr-0": {
+		"plava": "lib/"
+		}
+	},
+	"require": {
+		"raveren/kint": "^1.0",
+		"phpoffice/phpexcel": "^1.8",
+		"stripe/stripe-php": "^3.12"
+	}
+}

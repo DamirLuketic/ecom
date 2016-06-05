@@ -1,0 +1,46 @@
+RewriteEngine On
+
+RewriteRule  ^main$ index.php
+RewriteRule  ^contact$ contact.php
+RewriteRule  ^login$ login.php
+RewriteRule  ^logout$ logout.php
+RewriteRule  ^register$ register.php
+RewriteRule  ^quality_report$ chart.php
+RewriteRule  ^download_csv_catalog$ excel_data/exportcsv_catalog.php
+RewriteRule  ^download_xls_catalog$ excel_data/exportxls_catalog.php
+RewriteRule  ^ERA$ img/page/ERA.png
+
+RewriteRule  ^admin_add$ admin/admin_add.php
+RewriteRule  ^admin_update$ admin/admin_update.php
+RewriteRule  ^admin_orders$ admin/admin_orders.php
+RewriteRule  ^admin_users$ admin/admin_users.php
+
+RewriteRule  ^user_personal$ user_personal.php
+RewriteRule  ^user_purchaise$ user_purchaise_history.php
+
+RewriteRule  ^cart$ cart.php
+RewriteRule  ^order$ order.php
+
+
+
+RewriteRule  ^purchaise/id_([0-9]+) user_purchaise_details.php?purchaise_id=$1
+
+
+
+
+
+
+
+RewriteRule  ^category/([0-9]+)/([0-9]+)/([0-9a-zA-Z]+) category.php?category=$1&group=$2&value=$3
+
+
+RewriteRule  ^create_post$ user/user_create_post.php
+RewriteRule  ^update_data$ user/user_update.php
+RewriteRule  ^users$ user/user_people.php
+RewriteRule  ^MyPost$ user/user_my_post.php
+RewriteRule  ^FollowPost$ user/user_follow_post.php
+
+RewriteRule  ^userDetails/us([0-9]+) user/user_person.php?user_id=$1
+
+RewriteRule  ^people/page([0-9]+) user/user_people.php?page=$1
+RewriteRule  ^people/page([0-9]+)/search-([0-9a-zA-Z]+) user/user_people.php?page=$1&term=$2
