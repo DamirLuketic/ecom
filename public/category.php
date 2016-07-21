@@ -46,8 +46,7 @@
 	<?php include 'menu.php'; ?>
 	<?php
 
-	// Prvo zadajemo uvjete za slaganje stranica,
-	// tj. prvotna stranica i broj objava po stranici
+	// First we send term for pagination,
 
 if(!isset($_GET["page"])){
 	$page=1;
@@ -60,8 +59,8 @@ if($page==0){
 
 $npp = 8;
 
-  // Šaljemo parametre klasi koju smo prvotno napravili u „composor“u.
-  // Prvotno izvlačimo podatke za podjelu stranica, te potom izvlačimo i same podatke.
+  // send parameter to Class
+  // first we retrieved data for pagination, then data for pages
 
 use plava\pagination;
 
